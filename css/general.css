@@ -24,13 +24,15 @@ Paragraph default: 1.6
 -Letter spacing: 
 
 --- 02 COLORS
-- Primary: #e67e22
-- Grey: #555 #333
+- Primary: #e67e22 #eb984c
+- Grey: #555 #333 #6f6f6f #fdf2e9
 - TInts: #fdf2e9 #fae5d3
 - Shades: #cf711f
 - Accents:
 
 --- 03 Shadows
+
+box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
 
 --- 04 Border-Radius:
 
