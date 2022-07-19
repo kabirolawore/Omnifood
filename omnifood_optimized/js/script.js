@@ -1,3 +1,34 @@
+const h1 = document.querySelector(".heading-primary");
+
+// h1.textContent = "Kabir O";
+// h1.style.backgroundColor = "yellow";
+
+// h1.addEventListener("click", function () {
+//   h1.textContent = "Kabir O";
+//   h1.style.backgroundColor = "yellow";
+//   h1.style.padding = "5rem";
+// });
+
+//////////// Make mobile navigation work ///////////
+
+const btnNavEl = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header");
+
+btnNavEl.addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
+});
+
+//////////// Smooth scrolling animation ///////////
+const allLinks = document.querySelectorAll("a:link");
+
+allLinks.forEach((link) =>
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    const href = link.getAttribute("href");
+    console.log(href);
+  })
+);
+
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {

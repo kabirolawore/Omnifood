@@ -55,6 +55,9 @@ html {
 
   font-size: 62.5%;
   overflow-x: hidden;
+
+  /* Doesn't work on Safari and MS Edge  */
+  /* scroll-behavior: smooth; */
 }
 
 body {
