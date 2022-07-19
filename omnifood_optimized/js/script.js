@@ -25,7 +25,24 @@ allLinks.forEach((link) =>
   link.addEventListener("click", (e) => {
     e.preventDefault();
     const href = link.getAttribute("href");
-    console.log(href);
+    // console.log(href);
+
+    // scroll to the top
+
+    if (href === "#") {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+
+    if (href !== "#" && href.startsWith("#")) {
+      const sectionEl = document.querySelector(href);
+      // console.log(sectionEl);
+      sectionEl.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
   })
 );
 
